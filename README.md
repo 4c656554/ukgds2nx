@@ -18,10 +18,9 @@ dependencies: matplotlib, networkx, pygraphviz, graphviz
 
 **Example Usage:**
 
-`import ukgds2nx as ux`
-
-`ux.ukgds2nx('EHV1.xls','test')      # saves ehv1 networkx graph in .gpickle format
-G=nx.read_gpickle('test.gpickle')   # loads gpickle file
-ux.plotmap(G)                       # plots and saves graph`
+    import ukgds2nx as ux
+    ux.ukgds2nx('EHV1.xls','test')      # saves ehv1 networkx graph in .gpickle format
+    G=nx.read_gpickle('test.gpickle')   # loads gpickle file
+    ux.plotmap(G)                       # plots and saves graph
 
 
