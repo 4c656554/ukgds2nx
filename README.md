@@ -1,5 +1,7 @@
 # ukgds2nx
 
+**Overview**
+
 Contains 2 functions:
 
 `ukgds2nx('ukgdsfilename.xls','outputfilename')`
@@ -8,13 +10,13 @@ This parses the named ukgds .xls files using the pandas library and NetworkX Mul
 
 dependencies: pandas, networkx
 
-`plotmap(G)`
+`plotmap(G,fileref='ukgds2nxFigure',graphprogram='neato',tag='')`
 
 Accepts networkx graph with UKGDS information. Generates node positions (deault uses 'neato'), plots and saves graph.
 
 dependencies: matplotlib, networkx, pygraphviz, graphviz
 
-Example Usage:
+**Example Usage:**
 
 `import ukgds2nx as ux`
 
