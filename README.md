@@ -23,4 +23,4 @@ dependencies: matplotlib, networkx, pygraphviz, graphviz
     G=nx.read_gpickle('test.gpickle')   # loads gpickle file
     ux.plotmap(G,fileref='ukgds2nxEHV1')                       # plots and saves graph
 
-![EHV1 graph plot](https://raw.githubusercontent.com/use4c656554/ukgds2ux/master/ukgds2nxEHV1neato.png)
+![EHV1 graph plot](https://raw.githubusercontent.com/4c656554/ukgds2ux/master/ukgds2nxEHV1neato.png)
