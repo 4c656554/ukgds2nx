@@ -208,7 +208,7 @@ def plotmap(G,fileref='ukgds2nxFigure',graphprogram='neato',tag=''):
     nx.draw(SG,nx.get_node_attributes(SG,'pos'),node_size=20,with_labels=False,node_color='g',edge_color='g',style='-',width=3,alpha=0.4)
     
     #--------------------------------------------------------------------------
-    #  Plot for 132 nodes
+    #  Plot for 132kV nodes
     #--------------------------------------------------------------------------
     nodes = [x for x,d in G.nodes(data=True) if d['BBV']==132]
     #print nodes
@@ -226,21 +226,4 @@ def plotmap(G,fileref='ukgds2nxFigure',graphprogram='neato',tag=''):
    
     plt.savefig(fileref+str(graphprogram)+str(tag)+'.png',dpi=300))
     
-    #--------------------------------------------------------------------------
-    #  Plot for 132 nodes
-    #--------------------------------------------------------------------------
-    nodes = [x for x,d in G.nodes(data=True) if d['BBV']==132]
-    #print nodes
-    SG = G.subgraph(nodes)
-    poslabels={}
-    for sgn in SG.nodes():
-        x,y = pos[sgn]
-        poslabels[sgn] = (x,y+100)
-    nodelabels = dict((x,x) for x,y in SG.nodes(data=True))
-    #print nx.get_node_attributes(SG,'pos')
-    nx.draw_networkx_labels(SG,pos=poslabels,labels=nodelabels,font_size=10,alpha=0.8) 
-    nx.draw_networkx_edges(SG,nx.get_node_attributes(SG,'pos'),edgelist=SG.edges(),edge_color='k',style='-',width=3,with_labels=False,alpha=0.4)
-    nx.draw(SG,nx.get_node_attributes(SG,'pos'),node_size=30,with_labels=False,node_color='k',alpha=0.4)
-    #nx.draw_networkx_edge_labels(G,nx.get_node_attributes(G,'pos'),edge_labels=labels,rotate=False,font_size=7)    
    
-    plt.savefig(fileref+str(graphprogram)+str(tag)+'.png',dpi=300)
