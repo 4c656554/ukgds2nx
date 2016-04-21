@@ -10,7 +10,7 @@ This parses the named ukgds .xls files using the pandas library and NetworkX Mul
 
 dependencies: pandas, networkx
 
-`plotmap(G,fileref='ukgds2nxFigure',graphprogram='neato',tag='')`
+`plotmap(G,fileref='ukgds2nxFigureEHV1',graphprogram='neato',tag='')`
 
 Accepts networkx graph with UKGDS information. Generates node positions (deault uses 'neato'), plots and saves graph.
 
@@ -23,4 +23,4 @@ dependencies: matplotlib, networkx, pygraphviz, graphviz
     G=nx.read_gpickle('test.gpickle')   # loads gpickle file
     ux.plotmap(G)                       # plots and saves graph
 
-
+![alt tag](https://raw.githubusercontent.com/use4c656554/ukgds2ux/master/ukgds2nxFigureEHV1.png)
