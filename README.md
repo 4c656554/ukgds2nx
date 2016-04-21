@@ -24,3 +24,8 @@ dependencies: matplotlib, networkx, pygraphviz, graphviz
     ux.plotmap(G,fileref='ukgds2nxEHV1')                       # plots and saves graph
 
 ![EHV1 graph plot](https://raw.githubusercontent.com/4c656554/ukgds2nx/master/ukgds2nxEHV1neato.png)
+
+**See Also**
+
+UKGDS files https://github.com/4c656554/ukgds
+ukgds2dss: https://github.com/sedg/ukgds2dss
