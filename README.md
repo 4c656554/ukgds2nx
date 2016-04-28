@@ -28,6 +28,6 @@ dependencies: matplotlib, networkx, pygraphviz, graphviz
 
 **See Also**
 
-UKGDS files https://github.com/sedg/ukgds2dss
+UKGDS files https://github.com/sedg/ukgds
 
 ukgds2dss: https://github.com/sedg/ukgds2dss
