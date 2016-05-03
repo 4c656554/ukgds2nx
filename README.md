@@ -6,7 +6,7 @@ Contains 2 functions:
 
 `ukgds2nx('ukgdsfilename.xls','outputfilename')`
 
-This parses the named ukgds .xls files using the pandas library and NetworkX Muligraph. The graph is saved as a .pickle file with the specified output file name.
+This parses the named ukgds .xls files using the pandas library and converst to a NetworkX Multigraph. The graph is saved as a .pickle file with the specified output file name.
 
 dependencies: pandas, networkx
 
