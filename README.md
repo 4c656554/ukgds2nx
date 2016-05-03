@@ -12,7 +12,7 @@ dependencies: pandas, networkx
 
 `plotmap(G,fileref='ukgds2nxFigure',graphprogram='neato',tag='')`
 
-Accepts networkx graph with UKGDS information. Generates node positions (deault uses 'neato'), plots and saves graph.
+Accepts networkx graph with UKGDS information. Generates node positions (default uses 'neato'), plots and saves graph.
 
 dependencies: matplotlib, networkx, pygraphviz, graphviz
 
